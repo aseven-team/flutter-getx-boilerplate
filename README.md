@@ -1,16 +1,62 @@
-# flutter_boilerplate
+# Flutter GetX Boilerplate
 
-A new Flutter project.
+This is a boilerplate project for Flutter using the GetX state management.
 
-## Getting Started
+## Features
+- GetX for state management
+- .env File
 
-This project is a starting point for a Flutter application.
+## Usage
 
-A few resources to get you started if this is your first Flutter project:
+### Installation
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+1. Clone the repository
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+git clone https://github.com/aseven-team/flutter_getx_boilerplate.git
+```
+
+2. Install the dependencies
+
+```bash
+flutter pub get
+```
+
+3. Configure the project
+
+- Change package name
+
+```
+dart run change_app_package_name:main id.co.aseven.flutter_boilerplate
+```
+
+Above command will change the package name and application id to `id.co.aseven.flutter_boilerplate`.
+
+
+- Create environment file
+
+Copy the `.env.example` file to `*.env` and change the values.
+
+### Build
+
+**Android**
+
+To build the project for Android, follow the instructions in the Flutter documentation: [https://docs.flutter.dev/deployment/android](https://docs.flutter.dev/deployment/android)
+
+> Because we are using .env file defining some configurations, don't forget to add `--dart-define-from-file=.env` to the build command.
+
+Example:
+
+```bash
+flutter build apk --dart-define-from-file=.env
+```
+
+**iOS**
+
+@todo
+
+## Packages
+
+- [GetX](https://pub.dev/packages/get)
+- [change_app_package_name](https://pub.dev/packages/change_app_package_name)
+- [flutter_env_native](https://pub.dev/packages/flutter_env_native)
