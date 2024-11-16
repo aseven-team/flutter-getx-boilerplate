@@ -55,8 +55,19 @@ flutter build apk --dart-define-from-file=.env
 
 @todo
 
+- Change launcher icon
+
+To change the launcher icon, replace the `assets/launcher_icon.png` file with your icon and run the following command:
+
+```bash
+dart run flutter_launcher_icons
+```
+
+Take a look at the [Flutter Launcher Icons](https://pub.dev/packages/flutter_launcher_icons) package for more information.
+
 ## Packages
 
 - [GetX](https://pub.dev/packages/get)
 - [change_app_package_name](https://pub.dev/packages/change_app_package_name)
 - [flutter_env_native](https://pub.dev/packages/flutter_env_native)
+- [Flutter Launcher Icons](https://pub.dev/packages/flutter_launcher_icons)
